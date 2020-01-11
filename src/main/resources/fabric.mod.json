@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "big-sheep",
+  "version": "${version}",
+
+  "name": "Big Sheep",
+  "description": "Makes some of your sheep big! (Caution: May cause explosions)",
+  "authors": [
+    "Matjojo"
+  ],
+  "contact": {
+    "homepage": "GITHUB URL",
+    "sources": "GITHUB URL"
+  },
+
+  "license": "GPL-3.0",
+  "icon": "assets/big-sheep/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.matjojo.bigSheep.bigSheepInit"
+    ]
+  },
+  "mixins": [
+    "big-sheep.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.2",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
